@@ -1,0 +1,114 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "framework": {
+                "parents": {
+                    "CoreBluetooth.framework": [
+                        {
+                            "xml": false,
+                            "count": 4
+                        }
+                    ],
+                    "CoreLocation.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "SystemConfiguration.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ],
+                    "CoreGraphics.framework": [
+                        {
+                            "xml": false,
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"BluetoothLePlugin\"><param name=\"ios-package\" value=\"BluetoothLePlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"EstimoteBeacons\"><param name=\"ios-package\" value=\"EstimoteBeacons\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"LocationManager\"><param name=\"ios-package\" value=\"CDVLocationManager\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"InAppBrowser\"><param name=\"ios-package\" value=\"CDVInAppBrowser\" /></feature>",
+                            "count": 1
+                        }
+                    ],
+                    "/widget": [
+                        {
+                            "xml": "<feature name=\"BluetoothSerial\"><param name=\"ios-package\" onload=\"true\" value=\"MEGBluetoothSerial\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"BLE\"><param name=\"ios-package\" onload=\"true\" value=\"BLECentralPlugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "*-Info.plist": {
+                "parents": {
+                    "UIBackgroundModes": [
+                        {
+                            "xml": "<array><string>bluetooth-central</string></array>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<array><string>bluetooth-central</string><string>bluetooth-peripheral</string></array>",
+                            "count": 1
+                        }
+                    ],
+                    "NSLocationAlwaysUsageDescription": [
+                        {
+                            "xml": "<string>This app would like to scan for Estimote Beacons when in the background.</string>",
+                            "count": 1
+                        }
+                    ],
+                    "NSLocationWhenInUseUsageDescription": [
+                        {
+                            "xml": "<string>This app would like to scan for Estimote Beacons while it is in use.</string>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.randdusing.bluetoothle": {
+            "PACKAGE_NAME": "com.snap.magiclock"
+        },
+        "com.megster.cordova.bluetoothserial": {
+            "PACKAGE_NAME": "com.snap.magiclock"
+        },
+        "com.megster.cordova.ble": {
+            "PACKAGE_NAME": "com.snap.magiclock"
+        },
+        "pl.makingwaves.estimotebeacons": {
+            "PACKAGE_NAME": "com.snap.magiclock"
+        },
+        "org.apache.cordova.inappbrowser": {
+            "PACKAGE_NAME": "com.snap.magiclock"
+        }
+    },
+    "dependent_plugins": {}
+}

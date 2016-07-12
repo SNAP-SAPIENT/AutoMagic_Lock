@@ -1,0 +1,33 @@
+{
+    "com.randdusing.bluetoothle": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/randdusing/BluetoothLE",
+            "subdir": "."
+        }
+    },
+    "com.megster.cordova.bluetoothserial": {
+        "source": {
+            "type": "registry",
+            "id": "com.megster.cordova.bluetoothserial"
+        }
+    },
+    "com.megster.cordova.ble": {
+        "source": {
+            "type": "registry",
+            "id": "com.megster.cordova.ble"
+        }
+    },
+    "pl.makingwaves.estimotebeacons": {
+        "source": {
+            "type": "registry",
+            "id": "pl.makingwaves.estimotebeacons"
+        }
+    },
+    "org.apache.cordova.inappbrowser": {
+        "source": {
+            "type": "registry",
+            "id": "org.apache.cordova.inappbrowser"
+        }
+    }
+}
